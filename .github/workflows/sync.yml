@@ -35,7 +35,7 @@ jobs:
           git push --all --force gitcode
           git push --tags --force gitcode
         env:
-          GITCODE_REPOSITORY: shenweiyan/PicKG
+          GITCODE_REPOSITORY: weiyan/PicKG
           GITCODE_PASSWORD: ${{ secrets.GITCODE_PAT }}
 
       - name: Push to AtomGit
