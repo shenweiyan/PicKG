@@ -1,11 +1,8 @@
-name: code-sync
+name: github-code-sync
 
 on:
   push:
     branches: [main]
-  workflow_run:
-    workflows: export-discussions   # 需要监听的流程名字
-    types: completed
 
 jobs:
   push-to-mirror:
