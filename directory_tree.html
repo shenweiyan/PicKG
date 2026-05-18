@@ -1,84 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Directory Tree</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                     "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+        background: #1e1e2e;
+        color: #cdd6f4;
+        padding: 24px 40px;
+        line-height: 1.6;
+    }
+    h1 {
+        margin-bottom: 16px;
+        font-size: 22px;
+        color: #89b4fa;
+    }
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Directory Tree</title>
-        <style>
-            ul {
-                list-style-type: none;
-            }
-            li {
-                margin: 5px 0;
-            }
-            a {
-                text-decoration: none;
-                color: blue;
-            }
-            a:hover {
-                text-decoration: underline;
-            }
-        </style>
-    </head>
-    <body>
-        <ul><a href="./files/README.md">README.md</a><br><a href="./files/index.html">index.html</a><br><a href="./files/directory_tree.html">directory_tree.html</a><br><a href="./files/html.py">html.py</a><br></ul>
-<ul><li><a href="./0000">0000</a>
-    <ul><li><a href="./0000/img">img</a>
-<ul><a href="./0000/img/files/donate.webp">donate.webp</a><br><a href="./0000/img/files/octocat.ico">octocat.ico</a><br><a href="./0000/img/files/server.png">server.png</a><br><a href="./0000/img/files/mobaxterm.webp">mobaxterm.webp</a><br><a href="./0000/img/files/vscode-mac-2x-v2.webp">vscode-mac-2x-v2.webp</a><br><a href="./0000/img/files/wechat-pay.jpg">wechat-pay.jpg</a><br><a href="./0000/img/files/kg-readme-cover.gif">kg-readme-cover.gif</a><br></ul>
-    </li></ul>
-    <ul><li><a href="./0000/css">css</a>
-<ul><a href="./0000/css/files/bootstrap.min.css">bootstrap.min.css</a><br><a href="./0000/css/files/font-awesome.min.css">font-awesome.min.css</a><br><a href="./0000/css/files/styles.css">styles.css</a><br></ul>
-    </li></ul>
-</li></ul>
-<ul><li><a href="./2023">2023</a>
-    <ul><li><a href="./2023/12">12</a>
-<ul><a href="./2023/12/files/change-category.png">change-category.png</a><br><a href="./2023/12/files/discussion-format.png">discussion-format.png</a><br><a href="./2023/12/files/filter-by-labels.png">filter-by-labels.png</a><br><a href="./2023/12/files/filter-labels.png">filter-labels.png</a><br><a href="./2023/12/files/pin-discussion.png">pin-discussion.png</a><br><a href="./2023/12/files/sort-discussions.png">sort-discussions.png</a><br><a href="./2023/12/files/transfer-discussion.png">transfer-discussion.png</a><br><a href="./2023/12/files/watch-github-discussions.png">watch-github-discussions.png</a><br></ul>
-    </li></ul>
-    <ul><li><a href="./2023/11">11</a>
-<ul><a href="./2023/11/files/cmd-change-dir.png">cmd-change-dir.png</a><br><a href="./2023/11/files/cmd-f-dir.png">cmd-f-dir.png</a><br><a href="./2023/11/files/cp-examplesite.png">cp-examplesite.png</a><br><a href="./2023/11/files/create-themes-dir.png">create-themes-dir.png</a><br><a href="./2023/11/files/download-hugo-windows.png">download-hugo-windows.png</a><br><a href="./2023/11/files/fontawesome-v5-free.png">fontawesome-v5-free.png</a><br><a href="./2023/11/files/hugo-exe-server.png">hugo-exe-server.png</a><br><a href="./2023/11/files/hugo-exe-version.png">hugo-exe-version.png</a><br><a href="./2023/11/files/mv-webstack-hugo-to-themes.png">mv-webstack-hugo-to-themes.png</a><br><a href="./2023/11/files/set-default-search-bing.png">set-default-search-bing.png</a><br><a href="./2023/11/files/twitter-decohack-webstack-hugo.png">twitter-decohack-webstack-hugo.png</a><br><a href="./2023/11/files/unzip-hugo-0.89.4-windows-64bit.png">unzip-hugo-0.89.4-windows-64bit.png</a><br><a href="./2023/11/files/view-default-search-bing.png">view-default-search-bing.png</a><br><a href="./2023/11/files/webstack-download-zip.png">webstack-download-zip.png</a><br><a href="./2023/11/files/webstack-hugo-1313.png">webstack-hugo-1313.png</a><br><a href="./2023/11/files/webstack-hugo-collapse.png">webstack-hugo-collapse.png</a><br><a href="./2023/11/files/webstack-hugo-expand.png">webstack-hugo-expand.png</a><br><a href="./2023/11/files/webstack-hugo-main-rename.png">webstack-hugo-main-rename.png</a><br><a href="./2023/11/files/webstack-hugo-main-unzip.png">webstack-hugo-main-unzip.png</a><br><a href="./2023/11/files/webstack-hugo-main-zip.png">webstack-hugo-main-zip.png</a><br><a href="./2023/11/files/webstack-hugo-phone.png">webstack-hugo-phone.png</a><br><a href="./2023/11/files/webstack-hugo-search.png">webstack-hugo-search.png</a><br><a href="./2023/11/files/webstack-win-ls.png">webstack-win-ls.png</a><br><a href="./2023/11/files/win-r-cmd.png">win-r-cmd.png</a><br></ul>
-    </li></ul>
-</li></ul>
-<ul><li><a href="./2024">2024</a>
-    <ul><li><a href="./2024/04">04</a>
-<ul><a href="./2024/04/files/coding.jpg">coding.jpg</a><br><a href="./2024/04/files/picx-vercel-framework-preset.webp">picx-vercel-framework-preset.webp</a><br></ul>
-    </li></ul>
-    <ul><li><a href="./2024/05">05</a>
-<ul><a href="./2024/05/files/qireader-twitter.png">qireader-twitter.png</a><br><a href="./2024/05/files/edge-1.png">edge-1.png</a><br><a href="./2024/05/files/edge-disable-features.png">edge-disable-features.png</a><br><a href="./2024/05/files/picx-weiyan-cc.webp">picx-weiyan-cc.webp</a><br><a href="./2024/05/files/qireader-plans.webp">qireader-plans.webp</a><br></ul>
-    </li></ul>
-    <ul><li><a href="./2024/06">06</a>
-<ul><a href="./2024/06/files/chrome-14px.png">chrome-14px.png</a><br><a href="./2024/06/files/chrome-show-url.png">chrome-show-url.png</a><br></ul>
-    </li></ul>
-    <ul><li><a href="./2024/07">07</a>
-<ul><a href="./2024/07/files/you-are-fired.webp">you-are-fired.webp</a><br><a href="./2024/07/files/atomgit-pages-for-atomgit.jpg">atomgit-pages-for-atomgit.jpg</a><br></ul>
-    </li></ul>
-    <ul><li><a href="./2024/08">08</a>
-<ul><a href="./2024/08/files/F1.large.jpg">F1.large.jpg</a><br><a href="./2024/08/files/badminton-0729.png">badminton-0729.png</a><br><a href="./2024/08/files/badminton-729.png">badminton-729.png</a><br><a href="./2024/08/files/badminton-lw-paris-2024.jpg">badminton-lw-paris-2024.jpg</a><br><a href="./2024/08/files/badminton-lw-silver-paris-2024.jpg">badminton-lw-silver-paris-2024.jpg</a><br><a href="./2024/08/files/badminton-shiyuqi-paris-2024.jpg">badminton-shiyuqi-paris-2024.jpg</a><br><a href="./2024/08/files/badminton-women-gold-paris-2024.jpg">badminton-women-gold-paris-2024.jpg</a><br><a href="./2024/08/files/basketball-0731.png">basketball-0731.png</a><br><a href="./2024/08/files/config-ext4-fs-posix-acl.webp">config-ext4-fs-posix-acl.webp</a><br><a href="./2024/08/files/fanzhendong-gold-paris-2024.webp">fanzhendong-gold-paris-2024.webp</a><br><a href="./2024/08/files/favicon-extractor.webp">favicon-extractor.webp</a><br><a href="./2024/08/files/favicon-im.webp">favicon-im.webp</a><br><a href="./2024/08/files/forest-road.jpg">forest-road.jpg</a><br><a href="./2024/08/files/install-packages-gridtext.webp">install-packages-gridtext.webp</a><br><a href="./2024/08/files/moba-keygen-unsafe.png">moba-keygen-unsafe.png</a><br><a href="./2024/08/files/mobatek-24.2-unzip-all.png">mobatek-24.2-unzip-all.png</a><br><a href="./2024/08/files/mobatek-24.2-unzip.png">mobatek-24.2-unzip.png</a><br><a href="./2024/08/files/mobaxterm-follow-terminal-folder.png">mobaxterm-follow-terminal-folder.png</a><br><a href="./2024/08/files/mobaxterm-genernal.png">mobaxterm-genernal.png</a><br><a href="./2024/08/files/mobaxterm-home-edition.png">mobaxterm-home-edition.png</a><br><a href="./2024/08/files/mobaxterm-right-click.png">mobaxterm-right-click.png</a><br><a href="./2024/08/files/mobaxterm-serial.png">mobaxterm-serial.png</a><br><a href="./2024/08/files/mobaxterm-session-ssh.png">mobaxterm-session-ssh.png</a><br><a href="./2024/08/files/mobaxterm-sftp.png">mobaxterm-sftp.png</a><br><a href="./2024/08/files/mobaxterm-split-mode.png">mobaxterm-split-mode.png</a><br><a href="./2024/08/files/mobaxterm-ssh-browser-type.png">mobaxterm-ssh-browser-type.png</a><br><a href="./2024/08/files/mobaxterm-ssh-keepalive.png">mobaxterm-ssh-keepalive.png</a><br><a href="./2024/08/files/mobaxterm-terminal-size.png">mobaxterm-terminal-size.png</a><br><a href="./2024/08/files/mobaxterm-vnc.png">mobaxterm-vnc.png</a><br><a href="./2024/08/files/mobaxterm-win-path-env.png">mobaxterm-win-path-env.png</a><br><a href="./2024/08/files/mobaxterm-x-server.png">mobaxterm-x-server.png</a><br><a href="./2024/08/files/mobaxterm_personal.png">mobaxterm_personal.png</a><br><a href="./2024/08/files/mobaxterm_professional.png">mobaxterm_professional.png</a><br><a href="./2024/08/files/ping-pong-china-korea-2024.jpg">ping-pong-china-korea-2024.jpg</a><br><a href="./2024/08/files/readme">readme</a><br><a href="./2024/08/files/setfacl-m-user.webp">setfacl-m-user.webp</a><br><a href="./2024/08/files/tune2fs-acl.webp">tune2fs-acl.webp</a><br><a href="./2024/08/files/win-defender-add-folders.png">win-defender-add-folders.png</a><br><a href="./2024/08/files/win-defender.png">win-defender.png</a><br><a href="./2024/08/files/win-safe-setting-1.png">win-safe-setting-1.png</a><br><a href="./2024/08/files/zheng-huang-paris-gold.jpg">zheng-huang-paris-gold.jpg</a><br><a href="./2024/08/files/zhuxian.png">zhuxian.png</a><br></ul>
-    </li></ul>
-    <ul><li><a href="./2024/09">09</a>
-<ul><a href="./2024/09/files/hello-morning.webp">hello-morning.webp</a><br><a href="./2024/09/files/index.md">index.md</a><br><a href="./2024/09/files/psql-db-list.webp">psql-db-list.webp</a><br></ul>
-    </li></ul>
-    <ul><li><a href="./2024/10">10</a>
-<ul><a href="./2024/10/files/23.1-activity-bar.png">23.1-activity-bar.png</a><br><a href="./2024/10/files/README">README</a><br><a href="./2024/10/files/follow-earfanfan.png">follow-earfanfan.png</a><br><a href="./2024/10/files/follow-joe-hou.png">follow-joe-hou.png</a><br><a href="./2024/10/files/galaxy-24.1.png">galaxy-24.1.png</a><br><a href="./2024/10/files/galaxy-issues-19016.png">galaxy-issues-19016.png</a><br><a href="./2024/10/files/hisat2-resource.png">hisat2-resource.png</a><br><a href="./2024/10/files/manage-db-21.05.png">manage-db-21.05.png</a><br><a href="./2024/10/files/node-v18.12.1-gcc.webp">node-v18.12.1-gcc.webp</a><br><a href="./2024/10/files/nodeenv-help.webp">nodeenv-help.webp</a><br><a href="./2024/10/files/qireader-earfanfan.png">qireader-earfanfan.png</a><br><a href="./2024/10/files/tcltk-issue-21887-msg.webp">tcltk-issue-21887-msg.webp</a><br></ul>
-    </li></ul>
-    <ul><li><a href="./2024/11">11</a>
-<ul><a href="./2024/11/files/README.md">README.md</a><br><a href="./2024/11/files/beian-aliyun-server.png">beian-aliyun-server.png</a><br><a href="./2024/11/files/china-mobile-operators.jpg">china-mobile-operators.jpg</a><br></ul>
-    </li></ul>
-    <ul><li><a href="./2024/12">12</a>
-<ul><a href="./2024/12/files/README">README</a><br><a href="./2024/12/files/webstack-hugo-init-commit.png">webstack-hugo-init-commit.png</a><br></ul>
-    </li></ul>
-</li></ul>
-<ul><li><a href="./2025">2025</a>
-    <ul><li><a href="./2025/02">02</a>
-<ul><a href="./2025/02/files/HTTP.jpg">HTTP.jpg</a><br><a href="./2025/02/files/09-aug-09.jpg">09-aug-09.jpg</a><br><a href="./2025/02/files/children-cattle.jpg">children-cattle.jpg</a><br><a href="./2025/02/files/deepseek-open-webui.png">deepseek-open-webui.png</a><br><a href="./2025/02/files/golden-rice.jpg">golden-rice.jpg</a><br><a href="./2025/02/files/html-meta.png">html-meta.png</a><br><a href="./2025/02/files/lin-hard-soft-links.png">lin-hard-soft-links.png</a><br><a href="./2025/02/files/linux-deepseek-r1-demo.png">linux-deepseek-r1-demo.png</a><br><a href="./2025/02/files/ollama-is-running.png">ollama-is-running.png</a><br><a href="./2025/02/files/ollama-service-11434.png">ollama-service-11434.png</a><br><a href="./2025/02/files/open-webui-auth.png">open-webui-auth.png</a><br><a href="./2025/02/files/open-webui-start.png">open-webui-start.png</a><br><a href="./2025/02/files/overflow-clip.png">overflow-clip.png</a><br><a href="./2025/02/files/pip3-matplotlib.png">pip3-matplotlib.png</a><br><a href="./2025/02/files/png-src-makevars.png">png-src-makevars.png</a><br><a href="./2025/02/files/shift-f10.png">shift-f10.png</a><br><a href="./2025/02/files/zmzl-w11.png">zmzl-w11.png</a><br><a href="./2025/02/files/zmzl.png">zmzl.png</a><br></ul>
-    </li></ul>
-    <ul><li><a href="./2025/03">03</a>
-<ul><a href="./2025/03/files/index.md">index.md</a><br><a href="./2025/03/files/miniforge3-24.5.0-0.webp">miniforge3-24.5.0-0.webp</a><br><a href="./2025/03/files/webstack-hugo-demo.png">webstack-hugo-demo.png</a><br><a href="./2025/03/files/webstack-hugo-star-history.png">webstack-hugo-star-history.png</a><br><a href="./2025/03/files/webstack-hugo-star-history.webp">webstack-hugo-star-history.webp</a><br><a href="./2025/03/files/coding-home.png">coding-home.png</a><br></ul>
-    </li></ul>
-</li></ul>
-<ul><li><a href="./__pycache__">__pycache__</a>
-<ul><a href="./__pycache__/files/html.cpython-39.pyc">html.cpython-39.pyc</a><br></ul>
-</li></ul>
-    </body>
-    </html>
-    
+    /* 根列表 */
+    ul.tree { list-style: none; padding-left: 0; }
+
+    /* 每个节点的子列表 */
+    .sub-tree {
+        list-style: none;
+        padding-left: 22px;
+        border-left: 1px solid #45475a;
+        margin-left: 9px;
+        overflow: hidden;
+        transition: max-height 0.25s ease, opacity 0.25s ease;
+    }
+
+    .tree-node { margin: 2px 0; }
+
+    /* ---- 目录切换按钮 ---- */
+    .dir-toggle {
+        display: inline-flex;
+        align-items: center;
+        background: none;
+        border: none;
+        color: inherit;
+        cursor: pointer;
+        padding: 3px 6px;
+        border-radius: 4px;
+        font-size: 14px;
+        font-family: inherit;
+        transition: background 0.15s;
+    }
+    .dir-toggle:hover { background: #313244; }
+
+    .toggle-arrow {
+        display: inline-block;
+        width: 14px;
+        font-size: 10px;
+        text-align: center;
+        transition: transform 0.2s;
+    }
+    .dir-toggle[aria-expanded="true"] .toggle-arrow { transform: rotate(90deg); }
+
+    .dir-icon, .file-icon { margin-right: 5px; }
+
+    .dir-name a {
+        color: #89b4fa;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    .dir-name a:hover { text-decoration: underline; }
+
+    /* 折叠时隐藏子菜单 */
+    .sub-tree.collapsed {
+        max-height: 0 !important;
+        opacity: 0;
+        border-left-color: transparent;
+    }
+    .sub-tree.expanded {
+        max-height: 10000px;
+        opacity: 1;
+    }
+
+    /* 文件链接 */
+    .file-link {
+        display: inline-flex;
+        align-items: center;
+        padding: 3px 8px;
+        border-radius: 4px;
+        color: #a6adc8;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .file-link:hover {
+        background: #313244;
+        text-decoration: none;
+        color: #b4befe;
+    }
+</style>
+<script>
+    // 点击按钮展开/折叠
+    document.addEventListener("click", function (e) {
+        const btn = e.target.closest(".dir-toggle");
+        if (!btn) return;
+
+        const targetId = btn.getAttribute("data-target");
+        const sub = document.getElementById(targetId);
+        if (!sub) return;
+
+        const isExpanded = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", isExpanded ? "false" : "true");
+
+        if (isExpanded) {
+            sub.classList.remove("expanded");
+            sub.classList.add("collapsed");
+        } else {
+            sub.classList.remove("collapsed");
+            sub.classList.add("expanded");
+        }
+    });
+
+    // 页面加载后默认全部折叠
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".sub-tree").forEach(function (ul) {
+            ul.classList.add("collapsed");
+        });
+    });
+</script>
+</head>
+<body>
+    <h1>📂 Directory Tree</h1>
+    <ul class="tree">
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-0-0-2279290796"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./0000">0000</a></span></button><ul class="sub-tree collapsed" id="tree-0-0-2279290796"><li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-0-2758200791"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./0000/bioitee">bioitee</a></span></button><ul class="sub-tree collapsed" id="tree-1-0-2758200791"><li class="tree-node file-node"><a class="file-link" href="./0000/bioitee/wechat-bioitee.webp"><span class="file-icon">&#128196;</span>wechat-bioitee.webp</a></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-1-1007112928"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./0000/css">css</a></span></button><ul class="sub-tree collapsed" id="tree-1-1-1007112928"><li class="tree-node file-node"><a class="file-link" href="./0000/css/bootstrap.min.css"><span class="file-icon">&#128196;</span>bootstrap.min.css</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/css/font-awesome.min.css"><span class="file-icon">&#128196;</span>font-awesome.min.css</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/css/styles.css"><span class="file-icon">&#128196;</span>styles.css</a></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-2-3614653594"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./0000/img">img</a></span></button><ul class="sub-tree collapsed" id="tree-1-2-3614653594"><li class="tree-node file-node"><a class="file-link" href="./0000/img/donate.webp"><span class="file-icon">&#128196;</span>donate.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/img/google-weiyan-cc.png"><span class="file-icon">&#128196;</span>google-weiyan-cc.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/img/kg-readme-cover.gif"><span class="file-icon">&#128196;</span>kg-readme-cover.gif</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/img/mobaxterm.webp"><span class="file-icon">&#128196;</span>mobaxterm.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/img/octocat.ico"><span class="file-icon">&#128196;</span>octocat.ico</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/img/paper-pattern-clean.png"><span class="file-icon">&#128196;</span>paper-pattern-clean.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/img/server.png"><span class="file-icon">&#128196;</span>server.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/img/vscode-mac-2x-v2.webp"><span class="file-icon">&#128196;</span>vscode-mac-2x-v2.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/img/wechat-pay.jpg"><span class="file-icon">&#128196;</span>wechat-pay.jpg</a></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-3-3211645192"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./0000/px">px</a></span></button><ul class="sub-tree collapsed" id="tree-1-3-3211645192"><li class="tree-node file-node"><a class="file-link" href="./0000/px/PX-X.png"><span class="file-icon">&#128196;</span>PX-X.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/px/bg.png"><span class="file-icon">&#128196;</span>bg.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/px/by.png"><span class="file-icon">&#128196;</span>by.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/px/by2.png"><span class="file-icon">&#128196;</span>by2.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/px/p2.png"><span class="file-icon">&#128196;</span>p2.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/px/p3.png"><span class="file-icon">&#128196;</span>p3.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/px/p4.png"><span class="file-icon">&#128196;</span>p4.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/px/p5.png"><span class="file-icon">&#128196;</span>p5.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/px/pagesx.svg"><span class="file-icon">&#128196;</span>pagesx.svg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/px/px-60.png"><span class="file-icon">&#128196;</span>px-60.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/px/px-favicon.webp"><span class="file-icon">&#128196;</span>px-favicon.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/px/rw.png"><span class="file-icon">&#128196;</span>rw.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/px/text-1.svg"><span class="file-icon">&#128196;</span>text-1.svg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./0000/px/text.svg"><span class="file-icon">&#128196;</span>text.svg</a></li></ul></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-0-1-1165942282"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2023">2023</a></span></button><ul class="sub-tree collapsed" id="tree-0-1-1165942282"><li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-0-3221469362"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2023/11">11</a></span></button><ul class="sub-tree collapsed" id="tree-1-0-3221469362"><li class="tree-node file-node"><a class="file-link" href="./2023/11/cmd-change-dir.png"><span class="file-icon">&#128196;</span>cmd-change-dir.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/cmd-f-dir.png"><span class="file-icon">&#128196;</span>cmd-f-dir.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/cp-examplesite.png"><span class="file-icon">&#128196;</span>cp-examplesite.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/create-themes-dir.png"><span class="file-icon">&#128196;</span>create-themes-dir.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/download-hugo-windows.png"><span class="file-icon">&#128196;</span>download-hugo-windows.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/fontawesome-v5-free.png"><span class="file-icon">&#128196;</span>fontawesome-v5-free.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/hugo-exe-server.png"><span class="file-icon">&#128196;</span>hugo-exe-server.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/hugo-exe-version.png"><span class="file-icon">&#128196;</span>hugo-exe-version.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/mv-webstack-hugo-to-themes.png"><span class="file-icon">&#128196;</span>mv-webstack-hugo-to-themes.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/set-default-search-bing.png"><span class="file-icon">&#128196;</span>set-default-search-bing.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/twitter-decohack-webstack-hugo.png"><span class="file-icon">&#128196;</span>twitter-decohack-webstack-hugo.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/unzip-hugo-0.89.4-windows-64bit.png"><span class="file-icon">&#128196;</span>unzip-hugo-0.89.4-windows-64bit.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/view-default-search-bing.png"><span class="file-icon">&#128196;</span>view-default-search-bing.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/webstack-download-zip.png"><span class="file-icon">&#128196;</span>webstack-download-zip.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/webstack-hugo-1313.png"><span class="file-icon">&#128196;</span>webstack-hugo-1313.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/webstack-hugo-collapse.png"><span class="file-icon">&#128196;</span>webstack-hugo-collapse.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/webstack-hugo-expand.png"><span class="file-icon">&#128196;</span>webstack-hugo-expand.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/webstack-hugo-main-rename.png"><span class="file-icon">&#128196;</span>webstack-hugo-main-rename.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/webstack-hugo-main-unzip.png"><span class="file-icon">&#128196;</span>webstack-hugo-main-unzip.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/webstack-hugo-main-zip.png"><span class="file-icon">&#128196;</span>webstack-hugo-main-zip.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/webstack-hugo-phone.png"><span class="file-icon">&#128196;</span>webstack-hugo-phone.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/webstack-hugo-search.png"><span class="file-icon">&#128196;</span>webstack-hugo-search.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/webstack-win-ls.png"><span class="file-icon">&#128196;</span>webstack-win-ls.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/11/win-r-cmd.png"><span class="file-icon">&#128196;</span>win-r-cmd.png</a></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-1-1235617937"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2023/12">12</a></span></button><ul class="sub-tree collapsed" id="tree-1-1-1235617937"><li class="tree-node file-node"><a class="file-link" href="./2023/12/blossom.png"><span class="file-icon">&#128196;</span>blossom.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/12/change-category.png"><span class="file-icon">&#128196;</span>change-category.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/12/discussion-format.png"><span class="file-icon">&#128196;</span>discussion-format.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/12/filter-by-labels.png"><span class="file-icon">&#128196;</span>filter-by-labels.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/12/filter-labels.png"><span class="file-icon">&#128196;</span>filter-labels.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/12/pdf2htmlex-1.jpg"><span class="file-icon">&#128196;</span>pdf2htmlex-1.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/12/pdf2htmlex-2.jpg"><span class="file-icon">&#128196;</span>pdf2htmlex-2.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/12/pin-discussion.png"><span class="file-icon">&#128196;</span>pin-discussion.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/12/sort-discussions.png"><span class="file-icon">&#128196;</span>sort-discussions.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/12/transfer-discussion.png"><span class="file-icon">&#128196;</span>transfer-discussion.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/12/tryemoji.png"><span class="file-icon">&#128196;</span>tryemoji.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2023/12/watch-github-discussions.png"><span class="file-icon">&#128196;</span>watch-github-discussions.png</a></li></ul></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-0-2-3447271831"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2024">2024</a></span></button><ul class="sub-tree collapsed" id="tree-0-2-3447271831"><li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-0-2037958259"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2024/04">04</a></span></button><ul class="sub-tree collapsed" id="tree-1-0-2037958259"><li class="tree-node file-node"><a class="file-link" href="./2024/04/coding.jpg"><span class="file-icon">&#128196;</span>coding.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/04/picx-vercel-framework-preset.webp"><span class="file-icon">&#128196;</span>picx-vercel-framework-preset.webp</a></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-1-313427480"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2024/05">05</a></span></button><ul class="sub-tree collapsed" id="tree-1-1-313427480"><li class="tree-node file-node"><a class="file-link" href="./2024/05/edge-1.png"><span class="file-icon">&#128196;</span>edge-1.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/05/edge-disable-features.png"><span class="file-icon">&#128196;</span>edge-disable-features.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/05/picx-weiyan-cc.webp"><span class="file-icon">&#128196;</span>picx-weiyan-cc.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/05/qireader-plans.webp"><span class="file-icon">&#128196;</span>qireader-plans.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/05/qireader-twitter.png"><span class="file-icon">&#128196;</span>qireader-twitter.png</a></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-2-4266762061"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2024/06">06</a></span></button><ul class="sub-tree collapsed" id="tree-1-2-4266762061"><li class="tree-node file-node"><a class="file-link" href="./2024/06/chrome-14px.png"><span class="file-icon">&#128196;</span>chrome-14px.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/06/chrome-show-url.png"><span class="file-icon">&#128196;</span>chrome-show-url.png</a></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-3-2862008273"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2024/07">07</a></span></button><ul class="sub-tree collapsed" id="tree-1-3-2862008273"><li class="tree-node file-node"><a class="file-link" href="./2024/07/atomgit-pages-for-atomgit.jpg"><span class="file-icon">&#128196;</span>atomgit-pages-for-atomgit.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/07/you-are-fired.webp"><span class="file-icon">&#128196;</span>you-are-fired.webp</a></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-4-4195367417"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2024/08">08</a></span></button><ul class="sub-tree collapsed" id="tree-1-4-4195367417"><li class="tree-node file-node"><a class="file-link" href="./2024/08/F1.large.jpg"><span class="file-icon">&#128196;</span>F1.large.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/badminton-0729.png"><span class="file-icon">&#128196;</span>badminton-0729.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/badminton-729.png"><span class="file-icon">&#128196;</span>badminton-729.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/badminton-lw-paris-2024.jpg"><span class="file-icon">&#128196;</span>badminton-lw-paris-2024.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/badminton-lw-silver-paris-2024.jpg"><span class="file-icon">&#128196;</span>badminton-lw-silver-paris-2024.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/badminton-shiyuqi-paris-2024.jpg"><span class="file-icon">&#128196;</span>badminton-shiyuqi-paris-2024.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/badminton-women-gold-paris-2024.jpg"><span class="file-icon">&#128196;</span>badminton-women-gold-paris-2024.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/basketball-0731.png"><span class="file-icon">&#128196;</span>basketball-0731.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/config-ext4-fs-posix-acl.webp"><span class="file-icon">&#128196;</span>config-ext4-fs-posix-acl.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/fanzhendong-gold-paris-2024.webp"><span class="file-icon">&#128196;</span>fanzhendong-gold-paris-2024.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/favicon-extractor.webp"><span class="file-icon">&#128196;</span>favicon-extractor.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/favicon-im.webp"><span class="file-icon">&#128196;</span>favicon-im.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/forest-road.jpg"><span class="file-icon">&#128196;</span>forest-road.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/install-packages-gridtext.webp"><span class="file-icon">&#128196;</span>install-packages-gridtext.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/moba-keygen-unsafe.png"><span class="file-icon">&#128196;</span>moba-keygen-unsafe.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/mobatek-24.2-unzip-all.png"><span class="file-icon">&#128196;</span>mobatek-24.2-unzip-all.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/mobatek-24.2-unzip.png"><span class="file-icon">&#128196;</span>mobatek-24.2-unzip.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/mobaxterm-follow-terminal-folder.png"><span class="file-icon">&#128196;</span>mobaxterm-follow-terminal-folder.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/mobaxterm-genernal.png"><span class="file-icon">&#128196;</span>mobaxterm-genernal.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/mobaxterm-home-edition.png"><span class="file-icon">&#128196;</span>mobaxterm-home-edition.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/mobaxterm-right-click.png"><span class="file-icon">&#128196;</span>mobaxterm-right-click.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/mobaxterm-serial.png"><span class="file-icon">&#128196;</span>mobaxterm-serial.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/mobaxterm-session-ssh.png"><span class="file-icon">&#128196;</span>mobaxterm-session-ssh.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/mobaxterm-sftp.png"><span class="file-icon">&#128196;</span>mobaxterm-sftp.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/mobaxterm-split-mode.png"><span class="file-icon">&#128196;</span>mobaxterm-split-mode.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/mobaxterm-ssh-browser-type.png"><span class="file-icon">&#128196;</span>mobaxterm-ssh-browser-type.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/mobaxterm-ssh-keepalive.png"><span class="file-icon">&#128196;</span>mobaxterm-ssh-keepalive.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/mobaxterm-terminal-size.png"><span class="file-icon">&#128196;</span>mobaxterm-terminal-size.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/mobaxterm-vnc.png"><span class="file-icon">&#128196;</span>mobaxterm-vnc.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/mobaxterm-win-path-env.png"><span class="file-icon">&#128196;</span>mobaxterm-win-path-env.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/mobaxterm-x-server.png"><span class="file-icon">&#128196;</span>mobaxterm-x-server.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/mobaxterm_personal.png"><span class="file-icon">&#128196;</span>mobaxterm_personal.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/mobaxterm_professional.png"><span class="file-icon">&#128196;</span>mobaxterm_professional.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/ping-pong-china-korea-2024.jpg"><span class="file-icon">&#128196;</span>ping-pong-china-korea-2024.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/readme"><span class="file-icon">&#128196;</span>readme</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/setfacl-m-user.webp"><span class="file-icon">&#128196;</span>setfacl-m-user.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/tune2fs-acl.webp"><span class="file-icon">&#128196;</span>tune2fs-acl.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/win-defender-add-folders.png"><span class="file-icon">&#128196;</span>win-defender-add-folders.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/win-defender.png"><span class="file-icon">&#128196;</span>win-defender.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/win-safe-setting-1.png"><span class="file-icon">&#128196;</span>win-safe-setting-1.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/zheng-huang-paris-gold.jpg"><span class="file-icon">&#128196;</span>zheng-huang-paris-gold.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/08/zhuxian.png"><span class="file-icon">&#128196;</span>zhuxian.png</a></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-5-1700819422"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2024/09">09</a></span></button><ul class="sub-tree collapsed" id="tree-1-5-1700819422"><li class="tree-node file-node"><a class="file-link" href="./2024/09/hello-morning.webp"><span class="file-icon">&#128196;</span>hello-morning.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/09/index.md"><span class="file-icon">&#128196;</span>index.md</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/09/psql-db-list.webp"><span class="file-icon">&#128196;</span>psql-db-list.webp</a></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-6-3531000321"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2024/10">10</a></span></button><ul class="sub-tree collapsed" id="tree-1-6-3531000321"><li class="tree-node file-node"><a class="file-link" href="./2024/10/23.1-activity-bar.png"><span class="file-icon">&#128196;</span>23.1-activity-bar.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/10/README"><span class="file-icon">&#128196;</span>README</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/10/follow-earfanfan.png"><span class="file-icon">&#128196;</span>follow-earfanfan.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/10/follow-joe-hou.png"><span class="file-icon">&#128196;</span>follow-joe-hou.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/10/galaxy-24.1.png"><span class="file-icon">&#128196;</span>galaxy-24.1.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/10/galaxy-issues-19016.png"><span class="file-icon">&#128196;</span>galaxy-issues-19016.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/10/hisat2-resource.png"><span class="file-icon">&#128196;</span>hisat2-resource.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/10/manage-db-21.05.png"><span class="file-icon">&#128196;</span>manage-db-21.05.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/10/node-v18.12.1-gcc.webp"><span class="file-icon">&#128196;</span>node-v18.12.1-gcc.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/10/nodeenv-help.webp"><span class="file-icon">&#128196;</span>nodeenv-help.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/10/qireader-earfanfan.png"><span class="file-icon">&#128196;</span>qireader-earfanfan.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/10/tcltk-issue-21887-msg.webp"><span class="file-icon">&#128196;</span>tcltk-issue-21887-msg.webp</a></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-7-3221469362"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2024/11">11</a></span></button><ul class="sub-tree collapsed" id="tree-1-7-3221469362"><li class="tree-node file-node"><a class="file-link" href="./2024/11/README.md"><span class="file-icon">&#128196;</span>README.md</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/11/beian-aliyun-server.png"><span class="file-icon">&#128196;</span>beian-aliyun-server.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/11/china-mobile-operators.jpg"><span class="file-icon">&#128196;</span>china-mobile-operators.jpg</a></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-8-1235617937"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2024/12">12</a></span></button><ul class="sub-tree collapsed" id="tree-1-8-1235617937"><li class="tree-node file-node"><a class="file-link" href="./2024/12/README"><span class="file-icon">&#128196;</span>README</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2024/12/webstack-hugo-init-commit.png"><span class="file-icon">&#128196;</span>webstack-hugo-init-commit.png</a></li></ul></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-0-3-3173232734"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2025">2025</a></span></button><ul class="sub-tree collapsed" id="tree-0-3-3173232734"><li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-0-2402617593"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2025/02">02</a></span></button><ul class="sub-tree collapsed" id="tree-1-0-2402617593"><li class="tree-node file-node"><a class="file-link" href="./2025/02/09-aug-09.jpg"><span class="file-icon">&#128196;</span>09-aug-09.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/02/HTTP.jpg"><span class="file-icon">&#128196;</span>HTTP.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/02/children-cattle.jpg"><span class="file-icon">&#128196;</span>children-cattle.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/02/deepseek-open-webui.png"><span class="file-icon">&#128196;</span>deepseek-open-webui.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/02/golden-rice.jpg"><span class="file-icon">&#128196;</span>golden-rice.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/02/html-meta.png"><span class="file-icon">&#128196;</span>html-meta.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/02/lin-hard-soft-links.png"><span class="file-icon">&#128196;</span>lin-hard-soft-links.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/02/linux-deepseek-r1-demo.png"><span class="file-icon">&#128196;</span>linux-deepseek-r1-demo.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/02/ollama-is-running.png"><span class="file-icon">&#128196;</span>ollama-is-running.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/02/ollama-service-11434.png"><span class="file-icon">&#128196;</span>ollama-service-11434.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/02/open-webui-auth.png"><span class="file-icon">&#128196;</span>open-webui-auth.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/02/open-webui-start.png"><span class="file-icon">&#128196;</span>open-webui-start.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/02/overflow-clip.png"><span class="file-icon">&#128196;</span>overflow-clip.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/02/pip3-matplotlib.png"><span class="file-icon">&#128196;</span>pip3-matplotlib.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/02/png-src-makevars.png"><span class="file-icon">&#128196;</span>png-src-makevars.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/02/shift-f10.png"><span class="file-icon">&#128196;</span>shift-f10.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/02/zmzl-w11.png"><span class="file-icon">&#128196;</span>zmzl-w11.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/02/zmzl.png"><span class="file-icon">&#128196;</span>zmzl.png</a></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-1-3402242562"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2025/03">03</a></span></button><ul class="sub-tree collapsed" id="tree-1-1-3402242562"><li class="tree-node file-node"><a class="file-link" href="./2025/03/an-error-occurred-local-galaxy.png"><span class="file-icon">&#128196;</span>an-error-occurred-local-galaxy.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/03/cheetah3-3.3.0.png"><span class="file-icon">&#128196;</span>cheetah3-3.3.0.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/03/coding-home.png"><span class="file-icon">&#128196;</span>coding-home.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/03/galaxy-21.01.png"><span class="file-icon">&#128196;</span>galaxy-21.01.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/03/galaxy-24-sigkill.png"><span class="file-icon">&#128196;</span>galaxy-24-sigkill.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/03/galaxy-24.2.3.dev0.png"><span class="file-icon">&#128196;</span>galaxy-24.2.3.dev0.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/03/galaxy-interface-24.0.rc1.svg"><span class="file-icon">&#128196;</span>galaxy-interface-24.0.rc1.svg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/03/galaxy-more-than-you-think.png"><span class="file-icon">&#128196;</span>galaxy-more-than-you-think.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/03/galaxyproject.jpg"><span class="file-icon">&#128196;</span>galaxyproject.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/03/index.md"><span class="file-icon">&#128196;</span>index.md</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/03/lucky666.png"><span class="file-icon">&#128196;</span>lucky666.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/03/miniforge3-24.5.0-0.webp"><span class="file-icon">&#128196;</span>miniforge3-24.5.0-0.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/03/production-webpack.png"><span class="file-icon">&#128196;</span>production-webpack.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/03/webstack-hugo-demo.png"><span class="file-icon">&#128196;</span>webstack-hugo-demo.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/03/webstack-hugo-star-history.png"><span class="file-icon">&#128196;</span>webstack-hugo-star-history.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/03/webstack-hugo-star-history.webp"><span class="file-icon">&#128196;</span>webstack-hugo-star-history.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/03/yarn-config-list.png"><span class="file-icon">&#128196;</span>yarn-config-list.png</a></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-2-2037958259"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2025/04">04</a></span></button><ul class="sub-tree collapsed" id="tree-1-2-2037958259"><li class="tree-node file-node"><a class="file-link" href="./2025/04/2025-birdwoodiana.jpg"><span class="file-icon">&#128196;</span>2025-birdwoodiana.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/04/2025-birdwoodiana.webp"><span class="file-icon">&#128196;</span>2025-birdwoodiana.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/04/2025-qm-1.jpg"><span class="file-icon">&#128196;</span>2025-qm-1.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/04/README"><span class="file-icon">&#128196;</span>README</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/04/blog-pages.png"><span class="file-icon">&#128196;</span>blog-pages.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/04/docs-pages.png"><span class="file-icon">&#128196;</span>docs-pages.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/04/get-start-pages.png"><span class="file-icon">&#128196;</span>get-start-pages.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/04/home-library.jpg"><span class="file-icon">&#128196;</span>home-library.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/04/home-pages.png"><span class="file-icon">&#128196;</span>home-pages.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/04/navigation-pages.png"><span class="file-icon">&#128196;</span>navigation-pages.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/04/starbuks-red-tea.webp"><span class="file-icon">&#128196;</span>starbuks-red-tea.webp</a></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-3-313427480"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2025/05">05</a></span></button><ul class="sub-tree collapsed" id="tree-1-3-313427480"><li class="tree-node file-node"><a class="file-link" href="./2025/05/aliyun-cc-domain.png"><span class="file-icon">&#128196;</span>aliyun-cc-domain.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/05/badminton202505(1).webp"><span class="file-icon">&#128196;</span>badminton202505(1).webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/05/badminton202505.webp"><span class="file-icon">&#128196;</span>badminton202505.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/05/domain-price.webp"><span class="file-icon">&#128196;</span>domain-price.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/05/lucky-file-browser-login.png"><span class="file-icon">&#128196;</span>lucky-file-browser-login.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/05/lucky-file-browser.png"><span class="file-icon">&#128196;</span>lucky-file-browser.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/05/lucky-ssl-tls.png"><span class="file-icon">&#128196;</span>lucky-ssl-tls.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/05/lucky-web-storage.png"><span class="file-icon">&#128196;</span>lucky-web-storage.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/05/lucky-web-sub-rule.png"><span class="file-icon">&#128196;</span>lucky-web-sub-rule.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/05/lucky-webdev.png"><span class="file-icon">&#128196;</span>lucky-webdev.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/05/readme.md"><span class="file-icon">&#128196;</span>readme.md</a></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-4-4266762061"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2025/06">06</a></span></button><ul class="sub-tree collapsed" id="tree-1-4-4266762061"><li class="tree-node file-node"><a class="file-link" href="./2025/06/20250531-1.jpg"><span class="file-icon">&#128196;</span>20250531-1.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/06/20250531-2.jpg"><span class="file-icon">&#128196;</span>20250531-2.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/06/20250531-3.jpg"><span class="file-icon">&#128196;</span>20250531-3.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/06/20250531-4.jpg"><span class="file-icon">&#128196;</span>20250531-4.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/06/20250531-boat.jpg"><span class="file-icon">&#128196;</span>20250531-boat.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/06/brave-sword-12n.jpg"><span class="file-icon">&#128196;</span>brave-sword-12n.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/06/dragon-boat-1.jpg"><span class="file-icon">&#128196;</span>dragon-boat-1.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/06/dragon-boat-2.webp"><span class="file-icon">&#128196;</span>dragon-boat-2.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/06/dragon-boat-3.webp"><span class="file-icon">&#128196;</span>dragon-boat-3.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/06/lovely-home.jpg"><span class="file-icon">&#128196;</span>lovely-home.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/06/vim.webp"><span class="file-icon">&#128196;</span>vim.webp</a></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-5-2862008273"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2025/07">07</a></span></button><ul class="sub-tree collapsed" id="tree-1-5-2862008273"><li class="tree-node file-node"><a class="file-link" href="./2025/07/anythingllm-3001.webp"><span class="file-icon">&#128196;</span>anythingllm-3001.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/anythingllm-admin-create.webp"><span class="file-icon">&#128196;</span>anythingllm-admin-create.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/anythingllm-allama.webp"><span class="file-icon">&#128196;</span>anythingllm-allama.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/anythingllm-create-workspace.webp"><span class="file-icon">&#128196;</span>anythingllm-create-workspace.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/anythingllm-start.webp"><span class="file-icon">&#128196;</span>anythingllm-start.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/blast-curl-config.webp"><span class="file-icon">&#128196;</span>blast-curl-config.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/dify-app.webp"><span class="file-icon">&#128196;</span>dify-app.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/dify-chatflow-iframe.webp"><span class="file-icon">&#128196;</span>dify-chatflow-iframe.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/dify-cloud-rerank.webp"><span class="file-icon">&#128196;</span>dify-cloud-rerank.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/dify-create-app.webp"><span class="file-icon">&#128196;</span>dify-create-app.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/dify-doc-split.webp"><span class="file-icon">&#128196;</span>dify-doc-split.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/dify-install-admin.webp"><span class="file-icon">&#128196;</span>dify-install-admin.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/dify-local-ollama-models.webp"><span class="file-icon">&#128196;</span>dify-local-ollama-models.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/dify-text-generator-app.webp"><span class="file-icon">&#128196;</span>dify-text-generator-app.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/dify-web-run.webp"><span class="file-icon">&#128196;</span>dify-web-run.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/dify-webapp.webp"><span class="file-icon">&#128196;</span>dify-webapp.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/dify-xorbits-inference.webp"><span class="file-icon">&#128196;</span>dify-xorbits-inference.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/english-chinese-no-dict-words.webp"><span class="file-icon">&#128196;</span>english-chinese-no-dict-words.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/english-chinese-with-dict-words.webp"><span class="file-icon">&#128196;</span>english-chinese-with-dict-words.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/hello-man.png"><span class="file-icon">&#128196;</span>hello-man.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/ncbi-blast.png"><span class="file-icon">&#128196;</span>ncbi-blast.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/rag-pipelines.webp"><span class="file-icon">&#128196;</span>rag-pipelines.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/simple-translation-workflow.webp"><span class="file-icon">&#128196;</span>simple-translation-workflow.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/starbucks-2-20250705.jpg"><span class="file-icon">&#128196;</span>starbucks-2-20250705.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/starbucks-20250705.jpg"><span class="file-icon">&#128196;</span>starbucks-20250705.jpg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/uv-install-base-url.webp"><span class="file-icon">&#128196;</span>uv-install-base-url.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/uv-install-curl-wget.webp"><span class="file-icon">&#128196;</span>uv-install-curl-wget.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/uv-install-echo-curl.webp"><span class="file-icon">&#128196;</span>uv-install-echo-curl.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/uv-install-tar.webp"><span class="file-icon">&#128196;</span>uv-install-tar.webp</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/07/uv-sh-install-sh.webp"><span class="file-icon">&#128196;</span>uv-sh-install-sh.webp</a></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-6-4195367417"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2025/08">08</a></span></button><ul class="sub-tree collapsed" id="tree-1-6-4195367417"><li class="tree-node file-node"><a class="file-link" href="./2025/08/2fa-github.png"><span class="file-icon">&#128196;</span>2fa-github.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/08/authentication-google.png"><span class="file-icon">&#128196;</span>authentication-google.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/08/authenticator-app-edit.png"><span class="file-icon">&#128196;</span>authenticator-app-edit.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/08/authenticator-cc-download-backup.png"><span class="file-icon">&#128196;</span>authenticator-cc-download-backup.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/08/authenticator-cc-scan.png"><span class="file-icon">&#128196;</span>authenticator-cc-scan.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/08/github-2fa-authentication-number.png"><span class="file-icon">&#128196;</span>github-2fa-authentication-number.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/08/github-two-factor-authentication.png"><span class="file-icon">&#128196;</span>github-two-factor-authentication.png</a></li></ul></li>
+<li class="tree-node"><button class="dir-toggle" aria-expanded="false" data-target="tree-1-7-1700819422"><span class="toggle-arrow">&#9654;</span><span class="dir-icon">&#128193;</span><span class="dir-name"><a href="./2025/09">09</a></span></button><ul class="sub-tree collapsed" id="tree-1-7-1700819422"><li class="tree-node file-node"><a class="file-link" href="./2025/09/commit-change-readme.png"><span class="file-icon">&#128196;</span>commit-change-readme.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/09/commits-20250902.png"><span class="file-icon">&#128196;</span>commits-20250902.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/09/compromised-token.png"><span class="file-icon">&#128196;</span>compromised-token.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/09/github-actions-security-yaml.png"><span class="file-icon">&#128196;</span>github-actions-security-yaml.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/09/github-actions-security.png"><span class="file-icon">&#128196;</span>github-actions-security.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/09/github-notifications.png"><span class="file-icon">&#128196;</span>github-notifications.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/09/main-py.jpeg"><span class="file-icon">&#128196;</span>main-py.jpeg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/09/name-main.jpeg"><span class="file-icon">&#128196;</span>name-main.jpeg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/09/plesk-page.png"><span class="file-icon">&#128196;</span>plesk-page.png</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/09/test-py.jpeg"><span class="file-icon">&#128196;</span>test-py.jpeg</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./2025/09/trigger-security-scan.png"><span class="file-icon">&#128196;</span>trigger-security-scan.png</a></li></ul></li></ul></li>
+<li class="tree-node file-node"><a class="file-link" href="./404.html"><span class="file-icon">&#128196;</span>404.html</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./README.md"><span class="file-icon">&#128196;</span>README.md</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./directory_tree.html"><span class="file-icon">&#128196;</span>directory_tree.html</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./index.html"><span class="file-icon">&#128196;</span>index.html</a></li>
+<li class="tree-node file-node"><a class="file-link" href="./html.py"><span class="file-icon">&#128196;</span>html.py</a></li>
+    </ul>
+</body>
+</html>

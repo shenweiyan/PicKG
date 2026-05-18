@@ -1,17 +1,3 @@
-## Pictures for Knowledge-Garden
+## Pictures for Digital-Garden
 
-用于公开的 [Knowledge-Garden](https://github.com/shenweiyan/Knowledge-Garden) 仓库 [Discussions](https://github.com/shenweiyan/Knowledge-Garden/discussions) 讨论区所有图片保存，基于 Cloudflare Pages 完成部署，对应以下自定义域名：
-
-- <https://pickg.pages.dev>
-- <https://kg.weiyan.cc>
-
-
-<!-- Security scan triggered at 2025-09-02 14:24:37 -->
-
-<!-- Security scan triggered at 2025-09-02 15:26:34 -->
-
-<!-- Security scan triggered at 2025-09-02 15:26:48 -->
-
-<!-- Security scan triggered at 2025-09-02 15:27:28 -->
-
-<!-- Security scan triggered at 2025-09-02 15:27:54 -->
+知识管理就像一个花园，需要精心培育和持续维护才能繁荣。这里是 [Digital-Garden](https://github.com/shenweiyan/Digital-Garden) 仓库 [Discussions](https://github.com/shenweiyan/Digital-Garden/discussions) 讨论区的图片站点。
